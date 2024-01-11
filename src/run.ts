@@ -1,11 +1,10 @@
-import { serve } from "server";
 import { webhookCallback } from "grammy/mod.ts";
 
 import config from "../env.ts";
 import composer from "./modules/mod.ts";
 import genBot from "./helpers/mod.ts";
 
-serve(async (req) => {
+Deno.serve(async (req) => {
   if (req.method === "POST") {
     const url = new URL(req.url);
     if (url.pathname.slice(1) === config.WEBHOOK_PATH) {
@@ -15,7 +14,7 @@ serve(async (req) => {
         const current_bot = await genBot(token);
         if (!current_bot) return;
         current_bot.use(composer);
-        return await webhookCallback(current_bot, "std/http")(req);
+        return await webhookCallback(current_bot, "serveHttp")(req);
       } catch (error) {
         return new Response("Error " + error.message);
       }
