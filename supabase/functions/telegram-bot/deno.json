@@ -3,5 +3,13 @@
   "tasks": {
     "dev": "deno run --allow-net --allow-read --allow-env --watch  src/locals.ts",
     "serverless": "deno run --allow-net --allow-read --allow-env src/run.ts"
+  },
+  "deploy": {
+    "project": "e787bb64-666f-4e6b-832f-863c89d402fa",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "src/run.ts"
   }
 }

@@ -7,6 +7,5 @@ export const env = cleanEnv(Deno.env.toObject(), {
   BOT_TOKEN: str(),
   NOTION_TOKEN: str(),
   NOTION_TASKS_DATABASE_ID: str(),
-  NOTION_TASKS_TEMPLATE_ID: str(),
-  WEBHOOK_PATH: str(),
+  FUNCTION_SECRET: str(),
 });
