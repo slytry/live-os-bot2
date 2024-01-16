@@ -1,4 +1,4 @@
-import { Composer } from "grammy/mod.ts";
+import { Composer } from "https://deno.land/x/grammy@v1.12.0/mod.ts";
 
 const composer = new Composer();
 

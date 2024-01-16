@@ -1,5 +1,8 @@
 import { env } from "../../env.ts";
-import { Client, LogLevel } from "notion";
+import {
+  Client,
+  LogLevel,
+} from "https://deno.land/x/notion_sdk@v2.2.3/src/mod.ts";
 
 const notion = new Client({
   auth: env.NOTION_TOKEN,

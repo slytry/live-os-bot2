@@ -1,5 +1,5 @@
-import { load } from "dotenv";
-import { cleanEnv, str } from "envalid";
+import { load } from "https://deno.land/std@0.211.0/dotenv/mod.ts";
+import { cleanEnv, str } from "https://deno.land/x/envalid@0.1.2/mod.ts";
 
 await load({ export: true });
 

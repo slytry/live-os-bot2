@@ -1,4 +1,4 @@
-import { Bot } from "grammy/mod.ts";
+import { Bot } from "https://deno.land/x/grammy@v1.12.0/mod.ts";
 
 import composer from "./modules/mod.ts";
 import { env } from "./env.ts";

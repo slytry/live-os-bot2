@@ -1,4 +1,4 @@
-import { Composer } from "grammy/mod.ts";
+import { Composer } from "https://deno.land/x/grammy@v1.12.0/mod.ts";
 import { CREATE_NEW_TASK_PATTERN, text } from "./constants.ts";
 import { createTask } from "./lib.ts";
 import { checkMessage } from "./helpers.ts";
